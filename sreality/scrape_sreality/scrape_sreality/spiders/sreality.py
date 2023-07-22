@@ -53,10 +53,26 @@ class SrealitySpider(scrapy.Spider):
 
 
 def _get_safe(data, path):
+    """Get value nested in `data` at `path`.
+    If `path` does not point to anyting in `data`, return None.
+    Path exists examples:
+    >>> _get_safe({'key': 'value'}, ['key'])
+    'value'
+    >>> _get_safe({'key1': {'key2': ['value']}}, ['key1', 'key2', 0])
+    'value'
+
+    Path does not exist:
+    >>> _get_safe({'key1': 'value'}, ['key2']) is None
+    True
+    >>> _get_safe({'key1': [{'key2': 'value'}]}, ['key1', 1, 'key2']) is None
+    True
+    >>> _get_safe({}, ['key']) is None
+    True
+    """
     current = data
     for key in path:
         try:
             current = current[key]
-        except KeyError:
+        except (KeyError, IndexError):
             return None
     return current
