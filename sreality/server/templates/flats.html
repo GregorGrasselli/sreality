@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flats</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+         .flat-title {
+             font-size: 24px;
+             margin-bottom: 10px;
+         }
+
+         .flat-image {
+             max-width: 100%;
+             height: auto;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Flats for Sale</h1>
+            <div class="row">
+                {% for flat in flats %}
+                    <div class="col-sm-6 col-md-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top flat-image" src="{{ flat.image_url }}" alt="Flat Image">
+                            <div class="card-body">
+                                <h3 class="card-title flat-title">{{ flat.title }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

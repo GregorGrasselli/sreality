@@ -1,0 +1,1076 @@
+2023-07-22 12:57:46 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: scrape_sreality)
+2023-07-22 12:57:46 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 (main, Jun  5 2023, 09:32:32) [GCC 13.1.1 20230429], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.2, Platform Linux-6.4.3-arch1-2-x86_64-with-glibc2.37
+2023-07-22 12:57:46 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape_sreality',
+ 'CLOSESPIDER_ITEMCOUNT': 500,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape_sreality.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['scrape_sreality.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 '
+               'Firefox/115.0'}
+2023-07-22 12:57:46 [asyncio] DEBUG: Using selector: EpollSelector
+2023-07-22 12:57:46 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-07-22 12:57:46 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-07-22 12:57:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.closespider.CloseSpider']
+2023-07-22 12:57:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-07-22 12:57:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-07-22 12:57:47 [psycopg.pq] DEBUG: couldn't import psycopg 'c' implementation: No module named 'psycopg_c'
+2023-07-22 12:57:47 [psycopg.pq] DEBUG: couldn't import psycopg 'binary' implementation: No module named 'psycopg_binary'
+2023-07-22 12:57:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrape_sreality.pipelines.ScrapeSrealityPipeline']
+2023-07-22 12:57:47 [scrapy.core.engine] INFO: Spider opened
+2023-07-22 12:57:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-07-22 12:57:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1> (referer: None)
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 33\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/UGvaiG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1083667532}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L6/03NBYn7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 921121868}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 137\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/XEaBzHA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2177639500}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/IW52Ml.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2885952588}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa082\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/CA0BWoX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3843605580}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+1\xa084\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/mDyB2Wm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1894347852}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa039\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/cKQB14b.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1494221900}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa0104\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_LZ/iYOBHb8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2487100492}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa073\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/rLNB1uE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3962569804}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 210\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/vsueYO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1838765132}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/KBABmUU.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3834467404}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 27\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/6a6LOh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4281607244}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 63\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/wwBHmw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3584583500}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/9UCBhU8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 859391052}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 43\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/oPRmQa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1550931020}
+2023-07-22 12:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 44\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/xjIKT7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2779337804}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 5+kt 242\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/mFOJ6C.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 761087052}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lf/MqRE56.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1360094284}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 104\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/aLbBgYU.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3936506956}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 65\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/eFtN4R.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2170049612}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa070\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/dsbBmPW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2779862092}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 61\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/hYNBr8P.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1697141836}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa068\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/9k0BkOT.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 28206156}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa036\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/v2GBXDK.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2639352908}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 26\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/7L1BIuG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 949699660}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/p8c7Ip.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2611369036}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 104\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_s/7F4vwI.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 197174348}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 96\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_q/wMVY17.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2851104588}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_Jx/F5KeGD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3790628684}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 68\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_s/PLPYyf.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3054294860}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 115\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kn/7TATqE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3527202636}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+1\xa057\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/B2ACDEj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3670922316}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 66\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/uwHCDN0.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2059605068}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 23\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/ENvofs.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3913995340}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 41\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/oNfBs4W.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1573213260}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa080\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/UkUGH5.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1973687372}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 115\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/OxkBEVB.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 633283660}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 127\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/ADiBqcP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 551113804}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa022\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/DhaB67c.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 121128012}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa068\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/0NHB4tC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1786082380}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa044\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MB/Q5YBtrb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1828848716}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 86\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/dUqBKbw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3026871372}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 45\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/70WCAm0.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2034947148}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 23\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/8F6BjCu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1555747916}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa065\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/JOlgF8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1751721036}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa061\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jh/Ky5BIZ3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2567980876}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/sClCC2b.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1103430732}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/c7yBJhF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3242001484}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/z6VLMu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2288718924}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 44\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/ZKrl6E.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3143459916}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 67\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/kQmQlt.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3510588492}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 64\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/3P1BwdA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3963573324}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 47\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lc/u44D11.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2877678668}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 73\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/Ss26IC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 830166092}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 54\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/6ob863.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 751043660}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 47\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/tP1MTZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4258808908}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/52yBGsn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2059674700}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa033\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/temg7J.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2765366348}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 29\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/QBQg4D.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3099862092}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa031\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/7mSBHHE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 886318156}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 42\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/8TUBG64.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1892951116}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa029\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/mWiBGzX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 550773836}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 30\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/9cNBG9H.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2211718220}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa034\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/s2pIRG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 595289164}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 48\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/pqwBWUX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1752917068}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 30\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/FlYBYei.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2841338956}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 52\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/jAswc8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 808150092}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 35\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/f3VQyZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 187393100}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa033\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/IdEQ2U.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3241894988}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 30\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/w4MjJV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1664836684}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+1\xa034\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/zPCBJAX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2654692428}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 14\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/JziBM7d.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3567936588}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 21\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/ysZSrG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4155139148}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 22\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/Qm0BMyr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 816473164}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 13\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/7GbCs7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 229270604}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 17\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/Ui0BM9H.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2091541580}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 107\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/KstBzqZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3497616460}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 35\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/WmJIlh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 863593548}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 73\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/HnhVzd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 578380876}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 45\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/wtFVzM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3799606348}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 85\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/JLaBzrO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3178849356}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/gPoDaA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 511272012}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 45\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/NTXFM0.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4235813964}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 67\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/XKOV9L.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2689164364}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 28\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/M01BODJ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 810116172}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 43\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/HgwBN2y.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3813237836}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 115\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/GjjBN8P.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3746128972}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 61\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/SAUBdf4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 524903500}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+1\xa072\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/iPXvTE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3460916300}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 155\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/IpqBOTU.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2286511180}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 119\xa0m² (Loft)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/AsVMzb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3930678348}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 61\xa0m² (Loft)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/3oTM3O.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4099499084}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 28\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/PreeXR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2445224540}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 61\xa0m² (Loft)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/EOlBaqT.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1025123404}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/JONebq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1786714716}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 82\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/ljYBfpP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2106418252}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 3+kt 126\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/hw2exc.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1311555164}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 1+kt 47\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/ItUc5L.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1918002252}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/ogDB9nq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2797589580}
+2023-07-22 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1>
+{'title': 'For sale apartment 4+kt 149\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/tPVr5M.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3765527628}
+2023-07-22 12:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2> (referer: https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=1)
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/Is7BWFK.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4012528716}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 29\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/u2pBq4S.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 173626444}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/69DIMy.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3672663116}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 46\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/kGMB5TR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2485081164}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment unusual 108\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Ks/0VIBoeu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 740869196}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 47\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K1/TTEDz3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2006312012}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/TwxIEX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2568071516}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 78\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/h1GydQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4211475532}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 27\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/0wjIX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 754861132}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 28\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/S32ruA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3628782668}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa066\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/hzgBDig.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4199703628}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 46\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/LVCCBAT.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1945162828}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/53tBSp9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3814679628}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 33\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/pgbB3s4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 128390220}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa071\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/ZNaBsya.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2650887244}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 48\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J3/I8R9Bm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 359011404}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/kJQYtg.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 810755148}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/FnTJkm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1397773388}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+1\xa084\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/vLb2pz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2428643148}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa0268\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jh/jdkNpl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 397307740}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_JZ/iLsKaO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1100474188}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa058\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/hqubTa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3570365516}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa054\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gR_m/qqFN2N.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2738566732}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa059\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/VTbmR7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3195098188}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa068\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/gNlBuRk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1183532108}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gQ_s/4DtBJK.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1541477964}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/KJCBlzh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 529450828}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Ks/pmpBCl9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1248205660}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa063\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/RF5JzD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 586957900}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa075\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/HxrXZR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1211000396}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 29\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/jVvBNS2.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1648317516}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 53\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/0ZBFZl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1945392204}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa062\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/oWuBgrr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 834552908}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa055\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_Jx/JveBrvd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3468670028}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa068\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_Kr/Twgcz4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2978932300}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa072\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/GJhBeSa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2845799500}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 109\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_Jy/7SndmY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3666330700}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa066\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/oUV1gL.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4196213836}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 72\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/Oc1ymb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 990401612}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/UsGBKvK.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 972702796}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 89\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/YOUBUFh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 922047564}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/N5OBdzr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2670679116}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gY_q/7vXzXj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1278186572}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa065\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/JD3dWz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2396047180}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 74\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/IWPdxM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1698973260}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa0119\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/thZBGmm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1722553420}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 50\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/v07KZQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3323528268}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 62\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kt/YwCHHM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1063633996}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 75\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L2/s9np1T.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3014239820}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+1\xa046\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kt/wQRHFB.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 195818572}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 36\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_Jz/iw3gvE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 294892620}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+1\xa047\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/wJCBLs1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2200593484}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 114\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/VP4BNvK.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2484525916}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 131\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/IuExNF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 99686492}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/cWhB9gR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1021507148}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/ltqBd8u.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3319161932}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+kt 27\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/3qBBoJ8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1002054732}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa083\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/u2VB6w1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2709869644}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa068\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/OOnJtV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3791406156}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa064\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/iSpEkG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2844550220}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+1\xa034\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/p9KBcL3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1672631372}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa073\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/LuMBKCl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3360187468}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/SUvCA3k.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4261966924}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment unusual 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/MykBbW4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1016493132}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 130\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/Hn4B4Sy.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2516939852}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 52\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/v7tBrrb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3540309068}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+1\xa087\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/scKBKW0.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1426929228}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 62\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/FSJBoJb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2684278348}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa078\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/0CKe1n.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1572103244}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/0RrBAXj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4021240908}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/TUFBor0.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 402408524}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 42\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/G9zCCHr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 348636236}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 80\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jk/qjR7k.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 653468748}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 107\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/S5fNcC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1655796812}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 100\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jl/ZqrBv2e.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3671196748}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 201\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/mzPBBR7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 423588940}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa067\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/ujKBmCF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1913398348}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/8K9B5nC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2631844940}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+kt 86\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/b28RWP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1811092556}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa063\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/JHsBfl9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3355387468}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa050\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/MMSYQh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1448506444}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa088\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/jz8HAS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1249010764}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa058\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/pdfBKIB.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3623633996}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/SNweGF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1962689612}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa080\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lc/UcgGTW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3922142284}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/0XuEXE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 370897996}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 5+kt 341\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/q3fBOAx.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2402686028}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/hAnBor.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3041809484}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 46\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/OhhvSz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2768335948}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 69\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L5/tHAB9C9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3592406092}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 5+1\xa0260\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/NCEXXX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3986641996}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 1+1\xa030\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_n/fVsil7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 540236124}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 97\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jb/wYwppO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4239599180}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+kt 56\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Ky/G0bR9j.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1733891148}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa064\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/oqGBIqM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3264955468}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa095\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/KcqBViC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2906145868}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 3+1\xa072\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/SqqBvn6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3978914140}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 110\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/jKuEDY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3837985868}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 4+kt 112\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/DLuXbH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1024222284}
+2023-07-22 12:57:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MB/LCWCFB.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 578102348}
+2023-07-22 12:57:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3> (referer: https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=2)
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 102\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/WAWJqv.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3832116300}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/v5mBaCY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 786261068}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 147\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kz/WflZUh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1746176604}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 29\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/02CBtJj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1883183452}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 60\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/rnyWXY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1142478668}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+1\xa037\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/5jcM2C.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1858483276}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 75\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/3ucfKS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2268521548}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 64\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/1OBLSp.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 520537164}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 117\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/7QABHTC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1659569228}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 91\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/QhaB9Bq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 549872716}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 53\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/PkmBpnZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3211293772}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 61\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/ydSL94.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 503587916}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment unusual 79\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/l5kBAA6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1858692172}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 26\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/HTBQoQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1632974412}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 233\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_Jz/zlqbwM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1940195148}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 47\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/gofBwvc.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2520901452}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 50\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/fVqBDzM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3951830092}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 51\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/5jeBTKW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 469713996}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 62\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/Sv0HHN.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1977242700}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 116\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/UJpBCj4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3906880588}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa0143\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gS_q/aJpDmZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 355170124}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_s/xHRD8h.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2125166412}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa082\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J3/5XOYw8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4277347404}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 5+1\xa0154\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/786Ttl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3421983820}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 103\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/t1RHLi.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2430489676}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa0114\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/y32tBP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3766834252}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 54\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/GJbIAx.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 23155788}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 55\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/i6hBd8K.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3960357964}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa081\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/JqCB8LG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2330739788}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 31\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/fJDcgH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1554953292}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 88\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/3ZjBEZP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4118156364}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa070\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/pk8BuUd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3563091020}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa099\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/AvAp6W.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1336424012}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 42\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/jciuhM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2457150540}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 57\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/MNzB5oQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3649201228}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa065\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/7KsBKDu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3370927180}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa070\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/DiPJ6U.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 434914380}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 19\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/J4gB9L9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 176436300}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 128\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/xIwPE4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1710642252}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 111\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/DeWBHuV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 931087436}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/W3BBHva.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 963593292}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/cSQBmBM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1373983820}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/r7EB51D.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1376273484}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/2oPBmP3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2842641484}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 111\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/6OSbsl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3565110348}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa069\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/1NGBWQO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1777091660}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa074\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/9FPBKCk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3119268940}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa066\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/TcVBx7M.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2693358668}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 97\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/f3jBdK7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1482376268}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+1\xa047\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/pz0BKA4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 571552844}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 59\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/hWUBpmO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3820127820}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/7QcBoQE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3656139852}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa0102\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/k8kBoP4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 787235916}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 125\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/1yCVzu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1605850188}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa055\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/NXCBJ94.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2666284108}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 87\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/Cy9G1M.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2915374156}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment unusual 212\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jl/2HPyTg.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 832981852}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa091\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/O3OBHI6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3107148876}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 80\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L6/lL8BsxO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2489570380}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 241\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/fPaxOc.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2178700364}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 32\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/o23BmSY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3970782284}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/Lj587f.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2062640204}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 83\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/mnTeux.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2352895052}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 68\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/6kmB4gs.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3604157516}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 174\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/5TlBp0f.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2014606412}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 85\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/Gnn12k.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3675550796}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/q4pBWGZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2333373516}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 165\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/kkP2CQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3851589196}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 167\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jk/pSgPNl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2954339404}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa0158\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/EPMRWT.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 430549852}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment unusual 131\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/eZgBpz1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1984521292}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 191\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/hPLB9z9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2185954380}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa0145\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/nPKjYD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 256926796}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 1+kt 39\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/YFaBFH6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 317391948}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 69\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/1zo7Oy.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2807813196}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 94\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/DJhBMlZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1549096012}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/0Lv9eN.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1689240652}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 105\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/YhQgDz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3788923980}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 71\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/IIDcal.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4006593612}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 52\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/5ZsBajY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 987743308}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+1\xa082\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/L7nBfu3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 208443484}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 122\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MB/SryBHkH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3134732108}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/uWHmer.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1709704268}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 51\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_KW/FYSB3he.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3352831052}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+1\xa082\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J3/ZQ1FGO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4192957516}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/QRtip4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4045689932}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Ja/j9T0QF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1549968460}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 61\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/HxfBb3X.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2296276044}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+1\xa043\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_LX/xqQHz7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 911729740}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_KW/my3NnR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2579006540}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 163\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_LR/bZxsRT.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3160004172}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 65\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gR_k/X7wCNM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 320686428}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 303\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/lCoB825.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2920130124}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kk/ENVBIZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3129526092}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 52\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_Kx/IzijmP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2708063308}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 2+kt 61\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_r/yjxhoH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3264792396}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 110\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_s/VRHB9SS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1995031628}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 107\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L4/SaQUKn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2116011852}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 4+kt 113\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gS_p/XGBPx.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2187130444}
+2023-07-22 12:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3>
+{'title': 'For sale apartment 3+kt 73\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_s/nvOB9Wj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 199869516}
+2023-07-22 12:57:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4> (referer: https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=3)
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 97\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_Jz/MfOJhL.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 618865740}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 54\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gZ_p/w76Bqfw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4234111324}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 71\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L5/KBNB6zm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1456063564}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 54\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_r/vC3yOz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2192848716}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jf/C3cfzf.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 31733580}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 101\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_JZ/rf9ZSg.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 116409932}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 71\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Ja/Fsuf0y.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2465478476}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/lluR7D.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3163030604}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 35\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gY_p/l9bhgO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2932393804}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/DErBbmn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4086826060}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 75\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_KR/nnjf3A.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1253324620}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 89\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gR_s/xhS0Xs.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3908813900}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment unusual 113\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/YwMSUd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3598648396}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 108\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/1i6BCvl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 973042764}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Ks/NKNmMl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2513159244}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 49\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/b7buO7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 987583564}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 95\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/3h1zPq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 567759948}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/J1My8G.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1121408076}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa058\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/chFBoat.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4233319500}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 152\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/zQkBpuJ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3490272332}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 83\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jm/so0Bwlz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3482649676}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa047\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/aZQ5YC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2423653452}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 20\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J3/jcy88A.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2458137676}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 57\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/YUb2Yx.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 281347148}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+1\xa037\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/Hh2Bh6n.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 636965964}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/Q25sBC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3973669964}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 35\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/pMJemd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3781383244}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 53\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/2sABiw6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1227686988}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+1\xa0108\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kz/8cT6xg.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 559416396}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 57\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/Z9zMQa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1448608844}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 147\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/Me3REp.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3574490188}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa077\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/Jnx1w9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2396943436}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 136\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/2dGBc7v.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1120883788}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 48\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/xQFBOK1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2686219340}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 90\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Ka/KuRB8yf.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3245033292}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 35\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/0KOSCF.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1617843276}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+1\xa097\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/HX0QvG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1139758156}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 63\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/6gIBChS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2676839500}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 88\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/9DhbKH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 465400908}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 24\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/jt4BZYm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 710431820}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 24\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/RwyBFgW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 809792588}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 23\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/pdcBEq6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1099326540}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 25\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/eovKgE.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1451648076}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 24\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jl/CKTByfj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1502205772}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 24\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_Jy/8ETBihz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3387438156}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 65\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/gNGBXzI.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3904730188}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/nagCB7G.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 500913228}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/2yfBk1u.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1970893900}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa071\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/k00BoE1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1391215692}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/h0DL7I.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1041507404}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_q/9heCDvO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3713840972}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 220\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/uxnBGZj.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3917423692}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 46\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Le/TMFBPnY.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1392678732}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 95\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_q/cwDCDwI.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 526169932}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 43\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/kZObGA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3984921676}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 145\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/AgFBbsu.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2723022668}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa0132\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/mkdhXZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3712878412}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 36\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/601Biny.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2239030860}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 115\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MC/0MDBbvO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3276670796}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 117\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/wJTBb0T.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2421032780}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 115\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/px7YiM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4032853068}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa052\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/zmHBk7N.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3467990092}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa064\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/jynBD1y.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4170384972}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/tO0m5Q.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1093354572}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 116\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/ylZBn82.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1676428364}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa0105\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_q/AYuBrpq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 293786700}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa0111\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gU_p/2EVBqwe.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 629331020}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 100\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/sIqxv1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2009551948}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 41\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/DVL7Yf.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2577466444}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa059\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_q/8DSBrsa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4052931660}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa092\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/M6BBqxw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 407987276}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa040\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J4/vO9B9ve.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3584840780}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 98\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/rpfBL7S.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 770229324}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 50\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/0l7fsk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3660465228}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 54\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/KRJsNN.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 657282124}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 118\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/PCfBL8c.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 482497612}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 98\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_Ju/r5lJ8a.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2451060300}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa077\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J2/jtgBR3Z.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 73991244}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa077\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/oNuszv.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1054495820}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 139\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/e2vWgk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 871961676}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+1\xa094\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/BkJBtOm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3945923660}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa066\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_LU/W5PYva.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3195270988}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/9Iddul.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 552354892}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 67\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/63iUwA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 640570444}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+1\xa069\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/f32rKq.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2473612364}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 83\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kt/F0yDQy.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 408171596}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 33\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gS_q/tRK2g9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2462094412}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 51\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gU_p/dy4CEXD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2772223052}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 55\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gR_s/tppj4h.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3503084620}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+kt 85\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jg/1948fD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3660026956}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+kt 115\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_Jy/RbaBjmH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3704108108}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+1\xa080\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/0rfBV1J.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1089225804}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa070\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/TF3m7L.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3595654220}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+1\xa049\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/cm8B7tN.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3605808204}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+kt 43\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/Ok0sE2.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3418729820}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 4+1\xa091\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/jvJBJkr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 132924492}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 2+kt 58\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/aAMBnrV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1206666316}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 1+1\xa034\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/e9ZdWw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3891020876}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa072\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/XmXBnji.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1424770124}
+2023-07-22 12:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4>
+{'title': 'For sale apartment 3+1\xa071\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/jK3BJKd.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2766947404}
+2023-07-22 12:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5> (referer: https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=4)
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa054\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jb/meYbIP.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2584425548}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa082\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/3DOpKH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 706495564}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa096\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/HthB71R.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2048672844}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'Auction apartment 2+1\xa077\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/bn9c8E.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2585543756}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa035\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/vtgBnfW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3927721036}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa084\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/lelsqM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3055375436}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa043\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/rVtxxZ.mpo?fl=res,400,300,3|shr,,20|jpg,90', 'id': 894653516}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa056\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/Lcnnge.mpo?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4189475916}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa095\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/mfaB7CQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2870756428}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 56\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MB/L85BXc1.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2067268684}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 39\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/wHTBOlp.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2098426956}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 63\xa0m² (Mezonet)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/LKBJk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2960020556}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa060\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/GvgBNjo.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2472236108}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa0100\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/RrKc4n.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1746682956}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa078\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/lkaeRW.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2537428044}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 5+kt 100\xa0m² (Attic)', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/IuBo82.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2031895628}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa080\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/O44zo2.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1908098124}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 127\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/t68Rsk.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2879128652}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 83\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J4/zWk0Z8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1737622604}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 43\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jn/8a5BnCh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 236733516}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa069\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/y1vo6l.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2921088076}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa069\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Ld/alzBGyX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 143074380}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 68\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/FbvBnVX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 521946188}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa061\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/fFvB626.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1864123468}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_t/AzbYE.mpo?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1717617740}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa065\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/StAo4M.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3743171660}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa070\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/Pp1o1s.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1276920908}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J9/pQpozz.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4246488140}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 132\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/pQhk76.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4115268684}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/ZZLBU4b.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1646019660}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 50\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/hZgBm54.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1931232332}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa055\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/PqjBRzU.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1704014924}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa041\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J5/900Zvb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2760401996}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 62\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jl/CblBdA8.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1427993676}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 78\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/DzSBWSn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 555832396}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa094\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Ks/cOqk0B.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 752145484}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K2/gxtIMb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2971419724}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa049\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/2ZVBnHA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3508290636}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa066\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/XDOB6py.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 639386700}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa081\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/wHjBm0C.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 924599372}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa099\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/4nkBTum.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3448403020}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa0218\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/RfbBqj3.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3473425484}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa035\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_L6/NJWfcV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2749916748}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa067\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/OnuBhew.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1649882188}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 26\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/VPNBMQS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1033598028}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 60\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J3/mfRYKC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3667256908}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 30\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/ZZN9he.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 876734284}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 125\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/a7rBfnw.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 940725324}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J3/S64BzXO.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1193985100}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa040\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/rOkBl80.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 908936268}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 40\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/DZdBmjZ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1159480396}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/Ea7Rc4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2589291596}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 38\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K5/pJppSM.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2536268876}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa086\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jg/iiPBFGJ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 4287697996}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa077\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/wr3BFZa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2002023500}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/WaOBT2c.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 281273932}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 34\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jf/n9YBpsl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 454198860}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 48\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QN_J3/XKSBpmG.mpo?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3940746316}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa091\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/E3xBlY6.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 296440908}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa085\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QI_Jh/JCtBaKJ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1745839180}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 68\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_d/xl0BHbi.png?fl=res,400,300,3|shr,,20|jpg,90', 'id': 785844828}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 53\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_a/tz4BIDy.png?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2430995036}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 37\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_Lw/5J8EJ3.png?fl=res,400,300,3|shr,,20|jpg,90', 'id': 297908316}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa067\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/8mwBeWX.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3374732364}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa052\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J5/L2eTbC.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1810322508}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa054\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/8hwB6jV.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1510753356}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa058\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/bRtgO5.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1654551628}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 70\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gT_r/hizmDN.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 564184908}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 51\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gX_p/R5Fx4Y.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1199912780}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 51\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gX_q/ZELB4Qn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3153839180}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 52\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_LX/pdIp9l.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2322187340}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 117\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gU_p/emXB7a4.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3799630924}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 68\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gZ_r/DgMB9Tr.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3857302604}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 113\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_Kv/ZdlJnc.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1105405004}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 34\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gW_n/v8V447.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3797903708}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 76\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QL_J2/c9jBbQS.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3582461004}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa040\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/RoSBVuQ.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3764208716}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment unusual 27\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MB/7NzBbzD.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 225379404}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment unusual 86\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/TRnBb3h.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2759787596}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 116\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gV_r/R8Dhkb.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2124990284}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa072\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jl/7RJBcQR.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1773671500}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 84\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kb/PZaBFFB.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 728003660}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 86\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/wpTtTm.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2011190348}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa0104\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/0T7BQAh.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3643360332}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa090\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jo/z1ebyL.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1768903756}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+kt 77\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/cs6BeO5.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2939642956}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa045\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QQ_Lg/GV3ByOg.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 326489164}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa080\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/vYxBcLa.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3756315724}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+kt 146\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/rTQBbBA.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 371676236}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa053\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K2/qRQBVIH.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3701015628}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa083\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jn/8Devkl.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3043980364}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+kt 30\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K1/TnZsHy.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2534036556}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 79\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/csSBhr9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1704879180}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 2+1\xa063\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QJ_Jg/rt0CCe7.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3892233292}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa0117\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QM_Kc/20tBMS9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3724760140}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+1\xa062\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QR_MD/JRpBiXG.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 102581324}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 1+1\xa038\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QP_K7/GJBBUmn.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 3893118028}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 64\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QO_K0/JvWBW7e.jpeg?fl=rot,180,0|res,400,300,3|shr,,20|jpg,90', 'id': 355562572}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 4+1\xa0120\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_QK_Jb/pb9Vq9.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 1038051148}
+2023-07-22 12:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&per_page=100&noredirect=1&tms=1690023466999&page=5>
+{'title': 'For sale apartment 3+kt 90\xa0m²', 'image': 'https://d18-a.sdn.cz/d_18/c_img_gU_o/93EZd5.jpeg?fl=res,400,300,3|shr,,20|jpg,90', 'id': 2639451980}
+2023-07-22 12:57:53 [scrapy.core.engine] INFO: Closing spider (closespider_itemcount)
+2023-07-22 12:57:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2339,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 118988,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'elapsed_time_seconds': 6.377814,
+ 'finish_reason': 'closespider_itemcount',
+ 'finish_time': datetime.datetime(2023, 7, 22, 10, 57, 53, 641787),
+ 'httpcompression/response_bytes': 1317709,
+ 'httpcompression/response_count': 5,
+ 'item_scraped_count': 500,
+ 'log_count/DEBUG': 510,
+ 'log_count/INFO': 8,
+ 'memusage/max': 88125440,
+ 'memusage/startup': 88125440,
+ 'request_depth_max': 5,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2023, 7, 22, 10, 57, 47, 263973)}
+2023-07-22 12:57:53 [scrapy.core.engine] INFO: Spider closed (closespider_itemcount)
